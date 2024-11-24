@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class="row justify-content-center mt-10">
+        <div class="col-12 col-md-8 col-lg-4">
+            <div class="card shadow-lg">
+                <div class="card-header text-center py-4 border-0">
+                    <h1 class="display-6 fw-bold">Login</h1>
+                </div>
+                <div class="card-body p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label fw-semibold">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="Enter your password">
+                        </div>
+                        <button type="button" class="btn btn-info w-100 py-2 fw-semibold text-white" (click)="login()">Login</button>
+                        <div class="row mt-3">
+                            <div class="col text-start">
+                                <a routerLink="/register" class="text-decoration-none text-danger fw-semibold">
+                                    Need Account? Register
+                                </a>
+                            </div>
+                            <div class="col text-end">
+                                <a routerLink="/forgot-password" class="text-decoration-none text-secondary fw-semibold">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <!-- Uncomment for Google Sign-In -->
+                            <!-- 
+                            <a (click)="signInWithGoogle()" class="text-decoration-none" style="cursor: pointer;">
+                                <div class="card shadow text-center">
+                                    <div class="card-body">
+                                        <img src="../../../assets/icons8-google-48.png" alt="Google Icon" height="24px" width="24px">
+                                        Sign In with Google
+                                    </div>
+                                </div>
+                            </a>
+                            -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
